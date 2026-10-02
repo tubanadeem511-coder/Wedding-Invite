@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Areeba &amp; Rayyan · Wedding Invitation</title>
+<meta name="description" content="You are cordially invited to the wedding of Areeba Hassan and Rayyan Ahmed.">
+<meta name="theme-color" content="#5A1625">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Great+Vibes&family=Inter:wght@400;500&family=Noto+Nastaliq+Urdu:wght@400;500&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+
+<!-- Shared SVG ornaments -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="rose" viewBox="0 0 60 60">
+      <circle cx="30" cy="30" r="26" fill="#FFFDF8" stroke="#C8A96B" stroke-width=".6"/>
+      <path d="M30 30c-8-2-12-10-6-15 8-5 18 2 16 11-2 9-14 12-20 5" fill="none" stroke="#C8A96B" stroke-width=".8"/>
+      <path d="M30 30c5 0 7-5 3-8-5-3-10 2-8 7 2 6 11 6 14 0" fill="none" stroke="#C8A96B" stroke-width=".8"/>
+      <circle cx="30" cy="30" r="2" fill="#C8A96B"/>
+    </symbol>
+    <symbol id="sprig" viewBox="0 0 200 200">
+      <path d="M6 194C50 150 90 100 150 14" fill="none" stroke="#7f8f6b" stroke-width="1.6"/>
+      <g fill="#8a9a76" opacity=".85">
+        <ellipse cx="38" cy="150" rx="22" ry="7" transform="rotate(-40 38 150)"/>
+        <ellipse cx="62" cy="120" rx="24" ry="7" transform="rotate(-62 62 120)"/>
+        <ellipse cx="86" cy="96" rx="22" ry="6" transform="rotate(-30 86 96)"/>
+        <ellipse cx="104" cy="66" rx="22" ry="6" transform="rotate(-70 104 66)"/>
+        <ellipse cx="128" cy="44" rx="18" ry="5" transform="rotate(-35 128 44)"/>
+        <ellipse cx="58" cy="168" rx="18" ry="5" transform="rotate(10 58 168)"/>
+        <ellipse cx="96" cy="124" rx="20" ry="6" transform="rotate(10 96 124)"/>
+      </g>
+      <use href="#rose" x="58" y="92" width="46" height="46"/>
+      <use href="#rose" x="112" y="30" width="34" height="34"/>
+      <g fill="#FFFDF8" stroke="#C8A96B" stroke-width=".5">
+        <circle cx="30" cy="132" r="4"/><circle cx="130" cy="82" r="3.5"/><circle cx="84" cy="150" r="3"/><circle cx="150" cy="58" r="3"/>
+      </g>
+    </symbol>
+    <symbol id="orn" viewBox="0 0 160 24">
+      <path d="M2 12h58M100 12h58" stroke="#C8A96B" stroke-width=".8"/>
+      <path d="M80 3c4 5 4 13 0 18-4-5-4-13 0-18zM68 12c4-4 8-4 12 0-4 4-8 4-12 0zM80 12c4-4 8-4 12 0-4 4-8 4-12 0z" fill="none" stroke="#C8A96B" stroke-width=".9"/>
+      <path d="M64 12l-4 0M96 12l4 0" stroke="#C8A96B"/>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="grain" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"><span id="bar"></span></div>
+
+<!-- ============ OPENING ENVELOPE ============ -->
+<section id="intro" class="intro" aria-label="Invitation envelope">
+  <div class="intro-text">
+    <p class="caps">You Are Cordially Invited</p>
+    <p class="caps small">To The Wedding Of</p>
+  </div>
+
+  <button class="envelope" id="openBtn" aria-label="Tap to open the invitation">
+    <span class="env-back"></span>
+    <span class="env-card">
+      <span class="script">Areeba Hassan</span>
+      <span class="amp">&amp;</span>
+      <span class="script">Rayyan Ahmed</span>
+    </span>
+    <span class="env-front"></span>
+    <span class="env-flap"><span class="seal">A<i>&amp;</i>R</span></span>
+  </button>
+
+  <p class="names-intro"><span data-bind="bride"></span> <em>&amp;</em> <span data-bind="groom"></span></p>
+  <p class="tap">Tap to Open<span class="arrow" aria-hidden="true"></span></p>
+</section>
+
+<main id="invite">
+
+<!-- ============ HERO ============ -->
+<section id="hero" class="hero">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="hero-veil"></div>
+  <svg class="flora tl" aria-hidden="true"><use href="#sprig"/></svg>
+  <svg class="flora br" aria-hidden="true"><use href="#sprig"/></svg>
+  <div class="hero-inner">
+    <p class="urdu rv" lang="ur" dir="rtl">بسم اللہ الرحمن الرحیم</p>
+    <p class="serif-sm rv">In the name of Allah,<br>the Most Gracious, the Most Merciful</p>
+    <svg class="orn rv" aria-hidden="true"><use href="#orn"/></svg>
+    <p class="serif-sm rv">Together with their families,</p>
+    <h1 class="names rv">
+      <span data-bind="bride"></span>
+      <b class="amp-big">&amp;</b>
+      <span data-bind="groom"></span>
+    </h1>
+    <p class="serif-sm rv">joyfully invite you to celebrate<br>the beginning of their forever.</p>
+    <p class="quote rv">Two hearts, one beautiful journey,<br>and a lifetime of love.</p>
+    <p class="urdu small rv" lang="ur" dir="rtl">دو دل، ایک سفر، ہمیشہ کے لیے</p>
+  </div>
+  <a href="#couple" class="scroll-cue" aria-label="Scroll to next section"></a>
+</section>
+
+<!-- ============ COUPLE ============ -->
+<section id="couple" class="panel">
+  <svg class="flora tr" aria-hidden="true"><use href="#sprig"/></svg>
+  <div class="frame rv">
+    <p class="script-sm">With the blessings of</p>
+    <div class="family">
+      <p class="rel">Daughter of</p>
+      <p class="par">Mr. &amp; Mrs. <span data-bind="brideFather"></span></p>
+    </div>
+    <h2 class="names mid"><span data-bind="bride"></span></h2>
+    <div class="amp-gold">&amp;</div>
+    <h2 class="names mid"><span data-bind="groom"></span></h2>
+    <div class="family">
+      <p class="rel">Son of</p>
+      <p class="par">Mr. &amp; Mrs. <span data-bind="groomFather"></span></p>
+    </div>
+    <svg class="orn" aria-hidden="true"><use href="#orn"/></svg>
+  </div>
+</section>
+
+<!-- ============ COUNTDOWN ============ -->
+<section id="countdown" class="panel dark">
+  <div class="glow"></div>
+  <p class="script-sm gold rv">Counting the moments</p>
+  <h2 class="h2 rv" id="cdLabel">Until the Baraat</h2>
+  <p class="cd-date rv" id="cdDate"></p>
+  <div class="cd rv" role="timer" aria-live="off">
+    <div class="cd-card"><b id="cdD">00</b><span>Days</span></div>
+    <div class="cd-card"><b id="cdH">00</b><span>Hours</span></div>
+    <div class="cd-card"><b id="cdM">00</b><span>Minutes</span></div>
+    <div class="cd-card"><b id="cdS">00</b><span>Seconds</span></div>
+  </div>
+  <p class="cd-end" id="cdEnd" hidden>The celebrations have begun. Thank you for being with us.</p>
+</section>
+
+<!-- ============ EVENTS ============ -->
+<section id="events" class="panel">
+  <svg class="flora bl" aria-hidden="true"><use href="#sprig"/></svg>
+  <p class="script-sm rv">Save the dates</p>
+  <h2 class="h2 rv">The Celebrations</h2>
+  <div class="timeline">
+    <article class="event baraat rv">
+      <div class="candle" aria-hidden="true"></div>
+      <p class="ev-no">Event 01</p>
+      <h3>Baraat</h3>
+      <p class="ev-day">Friday</p>
+      <p class="ev-date" data-bind="baraatDate"></p>
+      <p class="ev-time" data-bind="baraatTime"></p>
+      <svg class="orn" aria-hidden="true"><use href="#orn"/></svg>
+      <p class="ev-venue" data-bind="venue"></p>
+    </article>
+    <div class="spine" aria-hidden="true"><i></i></div>
+    <article class="event walima rv">
+      <p class="ev-no">Event 02</p>
+      <h3>Walima Reception</h3>
+      <p class="ev-day">Saturday</p>
+      <p class="ev-date" data-bind="walimaDate"></p>
+      <p class="ev-time" data-bind="walimaTime"></p>
+      <svg class="orn" aria-hidden="true"><use href="#orn"/></svg>
+      <p class="ev-venue" data-bind="venue"></p>
+    </article>
+  </div>
+</section>
+
+<!-- ============ VENUE ============ -->
+<section id="venue" class="panel venue">
+  <div class="venue-bg"></div>
+  <div class="frame glass rv">
+    <p class="script-sm">Where we celebrate</p>
+    <h2 class="h2" data-bind="venue"></h2>
+    <svg class="orn" aria-hidden="true"><use href="#orn"/></svg>
+    <p class="note">Venue address to be added</p>
+    <a class="btn" id="mapBtn" href="#" target="_blank" rel="noopener">View Location</a>
+  </div>
+</section>
+
+<!-- ============ RSVP ============ -->
+<section id="rsvp" class="panel">
+  <svg class="flora tr" aria-hidden="true"><use href="#sprig"/></svg>
+  <p class="script-sm rv">Reply with joy</p>
+  <h2 class="h2 rv">Kindly RSVP</h2>
+  <p class="serif-sm rv">We would be honored to celebrate with you.</p>
+  <form id="rsvpForm" class="form rv" novalidate>
+    <label>Your name<input id="fName" name="name" type="text" autocomplete="name" required></label>
+    <div class="row">
+      <label>Guests
+        <select id="fGuests" name="guests"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select>
+      </label>
+      <label>Meal preference <small>(optional)</small>
+        <select id="fMeal" name="meal"><option value="">No preference</option><option>Non-vegetarian</option><option>Vegetarian</option></select>
+      </label>
+    </div>
+    <fieldset>
+      <legend>Attendance</legend>
+      <label class="chip"><input type="radio" name="att" value="Joyfully Accept" checked><span>Joyfully Accept</span></label>
+      <label class="chip"><input type="radio" name="att" value="Regretfully Decline"><span>Regretfully Decline</span></label>
+    </fieldset>
+    <label>Message <small>(optional)</small><textarea id="fMsg" name="message" rows="3"></textarea></label>
+    <button type="submit" class="btn solid">Confirm Attendance</button>
+    <button type="button" class="btn wa" id="waBtn">RSVP via WhatsApp</button>
+    <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+  </form>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer id="footer" class="panel dark foot">
+  <svg class="flora tl" aria-hidden="true"><use href="#sprig"/></svg>
+  <svg class="flora br" aria-hidden="true"><use href="#sprig"/></svg>
+  <p class="script-lg rv">With love,</p>
+  <p class="names mid rv"><span data-bind="brideFirst"></span> <b class="amp-inline">&amp;</b> <span data-bind="groomFirst"></span></p>
+  <svg class="orn rv" aria-hidden="true"><use href="#orn"/></svg>
+  <p class="serif-sm rv">Thank you for being part of<br>our beautiful beginning.</p>
+  <p class="urdu rv" lang="ur" dir="rtl">بِسْمِ اللَّهِ</p>
+</footer>
+</main>
+
+<button class="fab music" id="musicBtn" aria-label="Music off" aria-pressed="false" hidden><span aria-hidden="true">♪</span></button>
+<a class="fab top" id="topBtn" href="#hero" aria-label="Back to top"><span aria-hidden="true">↑</span></a>
+
+<script src="script.js"></script>
+</body>
+</html>
